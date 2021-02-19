@@ -62,7 +62,7 @@ void getCommand(string &command , string &key){
 
 void searchName(vector<string> names, vector<int> scores, vector<char> grades, string key){
     bool found = false;
-    for(int i = 0 ; i < names.size() ; ++i){
+    for(unsigned int i = 0 ; i < names.size() ; ++i){
         if(key == toUpperStr(names[i])){
             cout << "---------------------------------\n";
             cout << names[i] << "'s score = " << scores[i] << endl;
@@ -81,7 +81,7 @@ void searchName(vector<string> names, vector<int> scores, vector<char> grades, s
 
 void searchGrade(vector<string> names, vector<int> scores, vector<char> grades, string key){
     cout << "---------------------------------\n";
-    for(int i = 0 ; i < names.size() ; ++i){
+    for(unsigned int i = 0 ; i < names.size() ; ++i){
         if(key[0] == grades[i]){
             cout << names[i] << " (" << scores[i] << ")\n";
         }
